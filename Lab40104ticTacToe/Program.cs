@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Lab40104ticTacToe
+namespace Lab04_TicTacToe
 {
     class Program
     {
