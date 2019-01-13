@@ -16,8 +16,6 @@ namespace Lab04_TicTacToe.Classes
 		/// Flag to determine if it is the user's turn
 		/// </summary>
 		public bool IsTurn { get; set; }
-
-
 		public Position GetPosition(Board board)
 		{
 			Position desiredCoordinate = null;
