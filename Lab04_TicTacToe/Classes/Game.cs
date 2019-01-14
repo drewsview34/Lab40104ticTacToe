@@ -30,26 +30,41 @@ namespace Lab04_TicTacToe.Classes
 		/// <returns>Winner</returns>
 		public Player Play()
 		{
-
-			//TODO: Complete this method and utilize the rest of the class structure to play the game.
-
-            /*
-             * Complete this method by constructing the logic for the actual playing of Tic Tac Toe. 
-             * 
-             * A few things to get you started:
-            1. A turn consists of a player picking a position on the board with their designated marker. 
-            2. Display the board after every turn to show the most up to date state of the game
-            3. Once a Winner is determined, display the board one final time and return a winner
-
-            Few additional hints:
-                Be sure to keep track of the number of turns that have been taken to determine if a draw is required
-                and make sure that the game continues while there are unmarked spots on the board. 
-
-            Use any and all pre-existing methods in this program to help construct the method logic. 
-             */
+            int counter = 0;
+            //while there is no winner run the game
+            while (Winner == null)
+            {
+                //Game Logic
+                if(CheckForWinner(Board))
+                {
+                    Winner = NextPlayer();
+                    Console.Clear();
+                    Console.WriteLine($"The winner is {Winner.Name}");
+                    Board.DisplayBoard();
+                    Console.WriteLine("Press any key to exit . . .");
+                    Console.Read();
+                    Environment.Exit(0);
+                }
+                else if (counter == 9)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Draw!");
+                    Board.DisplayBoard();
+                    Console.WriteLine("Press any key to exit . . .");
+                    Console.ReadKey();
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    Board.DisplayBoard();
+                    NextPlayer().TakeTurn(Board);
+                    counter++;
+                    SwitchPlayer();
+                    Console.Clear();
+                }
+            }
+            return Winner;
 		}
-
-
 		/// <summary>
 		/// Check if winner exists
 		/// </summary>
