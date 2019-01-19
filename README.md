@@ -7,7 +7,7 @@ Developer: Andrew Hinojosa
 * Collaborator: n/a
 * Contributors: Jason Few
 
-Actual Time to complete: 15 Hours
+Actual Time to complete: 8 Hours
 
 * User must create a new project in Visual Studio. 
 * User must push project to Github.
