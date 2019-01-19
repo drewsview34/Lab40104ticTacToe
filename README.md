@@ -4,10 +4,10 @@ Lab 40104 Tic-Tac-Toe
 
 Developer: Andrew Hinojosa
 
-Contributors: ???
+* Collaborator: n/a
+* Contributors: Jason Few
 
-
-Actual Time to complete: ???
+Actual Time to complete: 15 Hours
 
 * User must create a new project in Visual Studio. 
 * User must push project to Github.
@@ -24,4 +24,4 @@ Here is a visual of what the program looks like.
 
 Successful Output
 
-![Lab40104](???)
+![Lab40104](C:\Users\drews\codefellows\401\Lab40104ticTacToe\Lab40104Visual.PNG)
