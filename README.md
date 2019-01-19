@@ -24,4 +24,4 @@ Here is a visual of what the program looks like.
 
 Successful Output
 
-![Lab40104](C:\Users\drews\codefellows\401\Lab40104ticTacToe\Lab40104Visual.PNG)
+![Lab40104](https://github.com/drewsview34/Lab40104ticTacToe/blob/master/Lab40104Visual.PNG)
